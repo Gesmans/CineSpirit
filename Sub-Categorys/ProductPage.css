@@ -180,7 +180,7 @@ body {
 
 .header {
     text-align: center;
-    background-image: url(Images/Front_Page/Rasberry.jpg);
+    background-image: url(/Images/Sub_Categorys/Networking/Rasberry_Pi_Web_Server/Rasberry.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -394,7 +394,7 @@ body {
 
 .con-how {
 
-    background-image: url(Images/Front_Page/Rasberry%20Pi.png);
+    background-image: url(/Images/Sub_Categorys/Networking/Rasberry_Pi_Web_Server/Rasberry%20Pi.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -541,7 +541,7 @@ body {
 
 .seperator {
     background-color: rgb(39,38,43);
-    padding: 15px; 
+    padding: 25px; 
 }
 
 /* || Footer */

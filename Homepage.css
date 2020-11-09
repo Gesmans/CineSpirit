@@ -99,6 +99,7 @@ body {
 }
 
 .container {
+
     padding-left: 300px;
     padding-right: 300px;
 }
@@ -199,7 +200,7 @@ body {
 
 .header {
     text-align: center;
-    background-image: url(Images/Front_Page//Background1.jpg);
+    background-image: url(Images/Homepage/Networking%20Server.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -307,7 +308,7 @@ body {
 
 .seperator {
     background-color: rgb(39, 38, 43);
-    padding: 15px;
+    padding: 50px;
 }
 
 /* || SVG Curve */
@@ -316,7 +317,7 @@ body {
     margin-bottom: -10px;
 }
 
-#curve path {
+.cls-1 {
     fill: white;
 }
 
@@ -571,47 +572,43 @@ body {
 
 }
 
+/* || Seperator */
+
+.seperator-info {
+    background-color: snow;
+    padding: 50px; 
+}
+
+
 /* || Portfolio */
 
 .folio {
-    background-image: url(Images/Front_Page/Background2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.folio .folio-overlay {
-    text-align: left;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    background-color: cover;
+    background-color: snow;
+    text-align: center;
 }
 
 
-.folio .folio-overlay .folio-head {
+
+.folio .folio-head {
     padding: 10px 0px 0px;
     font-size: 20px;
-    color: white;
+    color: black;
     font: lato;
     text-align: center;
-    font-weight:
 }
 
-.folio .folio-overlay .folio-solid {
+.folio .folio-solid {
     border: 1px solid white;
-    width: 60px;
+    width: 800px;
     text-align: center;
 }
 
-.folio .folio-overlay .folio-row {
+.folio .folio-row {
     display: table;
     border-spacing: 0;
 }
 
-.folio .folio-overlay .folio-row .folio-column {
+.folio .folio-row .folio-column {
     width: 33%;
     display: table-cell;
     padding: 10px;
@@ -622,10 +619,9 @@ body {
   
 }
 
-.folio .folio-overlay .folio-row .folio-column .folio-box {
+.folio .folio-row .folio-column .folio-box {
+    position: relative;
     background-color: rgb(42, 42, 46);
-    padding-bottom: 10px;
-    border-radius: 5px;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -634,44 +630,145 @@ body {
         0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.folio .folio-overlay .folio-row .folio-column .folio-box:hover {
+.folio .folio-row .folio-column .folio-box:hover {
     -ms-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
     transition: 0.5s ease;
+    
 }
 
-.folio .folio-overlay .folio-row .folio-column .folio-box .folio-img  {
+.folio .folio-row .folio-column .folio-box .folio-img  {
     width: 400px;
-    padding-bottom: 8px;
+    
 }
 
-.folio .folio-overlay .folio-row .folio-column .folio-box .folio-text {
+.folio .folio-row .folio-column .folio-box .folio-img-overlay  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-color: cover;
+    
+    
+}
+.folio .folio-row .folio-column .folio-box  .folio-img-overlay .folio-text {
     color: snow;
+    font-size: 40px;
     font-weight: bold;
-    margin: 0px;
+    position: absolute;
+    font-weight: lighter;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.folio .folio-row .folio-column .folio-box:hover .folio-img-overlay {
+    opacity: 1;
+   
 }
 
 @media screen and (max-width: 880px) {
     
-    .folio .folio-overlay .folio-head {
+    .folio .folio-head {
         font-size: 15px;
     }
     
-    .folio .folio-overlay .folio-row {
+    .folio .folio-row {
         display: grid;
     }
     
-    .folio .folio-overlay .folio-row .folio-column {
+    .folio .folio-row .folio-column {
         width: 100%;
     }
     
-    .folio .folio-overlay .folio-row .folio-column .folio-box .folio-img {
+    .folio .folio-row .folio-column .folio-box .folio-img {
         display: grid;
         width: 100%;
         text-align: center;
     }
 }
+
+/* || Further Info */
+
+.cls-2 {
+    fill: rgb(39,38,43);
+}
+
+.further {
+    background-color: rgb(39,38,43);
+    text-align: center;
+    margin: 0px;
+}
+
+.further .further-text {
+    color: snow;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 25px;
+    margin: 0;
+   
+}
+.further .further-button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: light;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    transition: border 0.7s ease;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    
+}
+
+.further .further-button:hover {
+    background-color: rgb(252,53,101);
+    border: 2px solid rgb(252,53,101);
+    border-radius: 2px;
+    transition: border 0.7s ease;
+    transition: background-color 0.7s ease;
+    transition: border 0.7s ease-out;
+    transition: background-color 0.7s ease-out;
+}
+
+.further .further-text-con {
+    color: snow;
+    text-align: center;
+    font-size: 20px;
+    padding: 40px 40px 150px 40px;
+    margin: 0px;
+}
+
+
+@media screen and (max-width:880px) {
+    .further .further-text-con {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
+
+
 /* || Footer */
 
 footer {
@@ -681,7 +778,7 @@ footer {
 
 @media (max-height:800px) {
     footer {
-        position: static
+        position: static;
     }
 
     header {

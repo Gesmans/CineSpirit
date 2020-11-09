@@ -1,269 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" type="image/png" href="Images/Logos/CineSpirit%20Logo%20Design.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Cine+ Spirit Portfolio</title>
-        <link href="Homepage.css" rel="stylesheet">
-        <script src="jquery-3.5.1.js"></script>
-    </head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="Images/Logos/CineSpirit%20Logo%20Design.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cine+ Spirit Portfolio</title>
+    <link href="Homepage.css" rel="stylesheet">
+    <script src="/Javascript/jquery-3.5.1.js"></script>
+</head>
+
 <body onload="myLoading()">
-        <div id="loader-wrapper">
+    <div id="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
-        </div>
-<div class="section" id="myDiv" >
-<!-- Nav Bar -->
-<section>
-    <nav class="topnav" id="myTopnav">
-        <img class="logo" src="Images/Logos/Text.png">
-        <a href="#blog">Blog</a>
-        <a href="#featured">Featured</a>
-        <a href="#curve">About</a>
-        <a href="#home">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-</section>
-<!-- Header -->
-<section id="home">
-    <div class="header">
-        <div class="header-overlay">
-            <div class="container">
-                <div class="header-text">
-                    <p class="header-text-1">BUILD WITH FREE IMAGINATION</p>
-                    <p class="header-text-2">ONLINE PORTFOLIOS<br> FOR CREATIVES</p>
-                    <p class="header-text-3">Portfoliobox lets you build your own online portfolio you<br> can mange galleries,e-commerce, blogs and much more</p>
-                    <a href="#featured">
-                    <button class="header-btn">CURRENT PROJECTS</button>
-                    </a>
-                    <button class="header-btn">RANDOM PROJECT</button>
+    </div>
+    <div class="section" id="myDiv">
+        <!-- Nav Bar -->
+        <section>
+            <nav class="topnav" id="myTopnav">
+                <img class="logo" src="/Images/Homepage/Logo/Text.png">
+                <a href="#contact">Contact</a>
+                <a href="#featured">Featured</a>
+                <a href="#curve">About</a>
+                <a href="index.html">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </section>
+        <!-- Header -->
+        <section id="home">
+            <div class="header">
+                <div class="header-overlay">
+                    <div class="container">
+                        <div class="header-text">
+                            <p class="header-text-1">BUILD WITH FREE IMAGINATION</p>
+                            <p class="header-text-2">ONLINE PORTFOLIOS<br> FOR CREATIVES</p>
+                            <p class="header-text-3">A Repository for All infomation Regarding Tech, Games</p>
+                            <a href="#featured">
+                                <button class="header-btn">CURRENT PROJECTS</button>
+                            </a>
+                            <button class="header-btn">RANDOM PROJECT</button>
+                        </div>
+                    </div>
+                    <svg id="curve" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 175.88">
+                        <path class="cls-1" d="M0,124.12s276.32,57,660.53,59.77S1400,124.12,1400,124.12V300H0Z" transform="translate(0 -126.12)" />
+                    </svg>
                 </div>
             </div>
+        </section>
+        <!-- Introduction -->
+        <section>
+            <div class="about-me">
+                <div class="container">
+                    <div class="intro-row">
+                        <div class="intro-column-left">
+                            <h1 class="intro-header">Hi, I'm<span style="color: #e63946"> Gerard</span></h1>
+                            <p class="intro-text">Aspiring Web Developer, Programmer and 2D Compositor <br> facinated in creating new and intresting Projects. </p>
+                            <p class="intro-text">Currently based in Hampshire, UK, specialising in<br>
+                                Digital Asset Management for <span style="color: black" ;>Huawei.</span></p>
+                            <button class="intro-button">Check out my Speciality's</button>
+                        </div>
+                        <div class="intro-column-right">
+                            <img src="Images/Homepage/Portrait/Gerard_Marshall.png" class="intro-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Key Skills Dropdown -->
+        <section>
+            <div class="skills" id="box">
+                <div class="container">
+                    <div class="skills-row">
+                        <div class="skills-column">
+                            <div class="skills-box">
+                                <img class="skills-img" src="/Images/Homepage/Icons/design%20-%20Copy.png">
+                                <h2 class="skills-head" style="color:#e63946" ;>Web-Design</h2>
+                                <p>A Live update on the Current Completion of Asset Quality checks for January 2020</p>
+                                <!-- <button class="skills-button">Click Here</button> -->
+                            </div>
+                        </div>
+                        <div class="skills-column">
+                            <div class="skills-box">
+                                <img class="skills-img" src="/Images/Homepage/Icons/Web-design%20-%20Copy.png">
+                                <h2 class="skills-head" style="color: #457b9d">Programming</h2>
+                                <p>A Live update on the Current Completion of Asset Quality checks for January 2020</p>
+                                <div class="skills-box-1">
+                                    <!-- <button class="skills-button-1">Click Here</button> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-column">
+                            <div class="skills-box">
+                                <img class="skills-img" src="Images/Homepage/Icons/com%20-%20Copy.png">
+                                <h2 class="skills-head" style="color: #f4a261">2D Compositing</h2>
+                                <p>A Live update on the Current Completion of Asset Quality checks for January 2020</p>
+                                <!-- <button class="skills-button-2">Click Here</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seporator -->
+        <section>
+            <div class="seperator-info">
+                <div class="container">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="seperator-info">
+                <div class="container">
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section>
+            <div class="folio">
+                <div class="container">
+                    <div class="folio-head" id="featured">
+                        <h2>We are continually working to create new <span style="color: rgb(252,53,101)">Exciting Projects!</span></h2>
+                        <p>Below we our most recent Computer Networking projects, containing <span style="color: rgb(252,53,101)">Simple</span> and <span style="color: rgb(252,53,101)">Easy</span> instructions for all ages.</p>
+                        <hr class="folio-solid"><br>
+                    </div>
+                    <div class="folio-row">
+                        <div class="folio-column">
+                            <div class="folio-box">
+                                <img class="folio-img" src="Images/Homepage/Gaming.jpg">
+                                <div class="folio-img-overlay">
+                                    <div class="folio-text">GAMING</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folio-column">
+                            <div class="folio-box">
+                                <a href="/Sub-Categorys/Sub_Category_Networking.html">
+                                    <img class="folio-img" src="Images/Homepage/Networking.jpg">
+                                    <div class="folio-img-overlay">
+                                        <div class="folio-text">NETWORKING</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="folio-column">
+                            <div class="folio-box">
+                                <img class="folio-img" src="Images/Homepage/Programming.jpg">
+                                <div class="folio-img-overlay">
+                                    <div class="folio-text">PROGRAMMING</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folio-row">
+                        <div class="folio-column">
+                            <div class="folio-box">
+                                <img class="folio-img" src="Images/Homepage/Digital%20Assets.png">
+                                <div class="folio-img-overlay">
+                                    <div class="folio-text">DIGITAL ASSET</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folio-column">
+                            <div class="folio-box">
+                                <img class="folio-img" src="Images/Homepage/Visual%20Effects.jpg">
+                                <div class="folio-img-overlay">
+                                    <div class="folio-text">VISUAL EFFECTS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folio-column">
+                            <div class="folio-box">
+                                <img class="folio-img" src="Images/Homepage/miscellaneous.jpg">
+                                <div class="folio-img-overlay">
+                                    <div class="folio-text">MISCELLANEOUS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Further Info -->
+        <section>
             <svg id="curve" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 175.88">
-                <path class="cls-1" d="M0,124.12s276.32,57,660.53,59.77S1400,124.12,1400,124.12V300H0Z" transform="translate(0 -126.12)"/>
+                <path class="cls-2" d="M0,124.12s276.32,57,660.53,59.77S1400,124.12,1400,124.12V300H0Z" transform="translate(0 -126.12)" />
             </svg>
-        </div>
-    </div>
-</section>
-<!-- Introduction -->
-<section >
-    <div class="about-me">
-        <div class="container">
-            <div class="intro-row">
-                <div class="intro-column-left">
-                    <h1 class="intro-header">Hi, I'm<span style="color: #e63946"> Gerard</span></h1>
-                    <p class="intro-text">Aspiring Web Developer, Programmer and 2D Compositor <br> facinated in creating new and intresting Projects. </p>
-                    <p class="intro-text">Currently based in Hampshire, UK, specialising in<br>
-                    Digital Asset Management for <span style="color: black";>Huawei.</span></p>
-                    <button class="intro-button">Check out my Speciality's</button>
-                </div>
-                <div class="intro-column-right">
-                    <img src="Images/Intro/Gerard_Marshall.png" class="intro-img">
+            <div class="further" id="#contact">
+                <div class="container">
+                    <h2 class="further-text">Any <span style="color:rgb(252,53,101">Projects</span> you think could be interesting?</h2>
+                    <a href="mailto:gerard.marshall41@yahoo.co.uk">
+                        <button class="further-button">Contact Us</button>
+                    </a>
+                    <p class="further-text-con">Have any other <span style="color: rgb(252,53,101)">Questions?</span> See our <span style="color: rgb(252,53,101)">Q&A</span></p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Key Skills Dropdown -->
-<section>
-    <div class="skills" id="box">
-        <div class="container">
-            <div class="skills-row">
-                <div class="skills-column">
-                    <div class="skills-box">
-                        <img class="skills-img" src="Images/Portfolio/design%20-%20Copy.png"> 
-                        <h2 class="skills-head" style="color:#e63946";>Web-Design</h2>
-                        <p>A Live update on the Current Completion of Asset Quality checks for January 2020</p>
-                        <!-- <button class="skills-button">Click Here</button> -->
+        </section>
+        <!-- Footer-->
+        <section>
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <img src="/Images/Homepage/Logo/Text.png">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        |
+                        <a href="#">Blog</a>
+                        |
+                        <a href="#">About</a>
+                        |
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="footer-company-name">@ 2020 Cine+ Spirit</p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Hampshire, Basingstoke.</span>UK, United Kingdom</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+44 07-906280402</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="gerard.marshall41@yahoo.co.uk">support@cinespirit.com</a></p>
                     </div>
                 </div>
-                <div class="skills-column">  
-                    <div class="skills-box">
-                        <img class="skills-img" src="Images/Portfolio/Web-design%20-%20Copy.png"> 
-                        <h2 class="skills-head" style="color: #457b9d">Programming</h2>
-                        <p>A Live update on the Current Completion of Asset Quality checks for January 2020</p>
-                    <div class="skills-box-1">
-                        <!-- <button class="skills-button-1">Click Here</button> -->
-                    </div>
-                    </div>
-                </div>
-                
-                <div class="skills-column">
-                    <div class="skills-box"> 
-                        <img class="skills-img" src="Images/Portfolio/com%20-%20Copy.png"> 
-                        <h2 class="skills-head" style="color: #f4a261">2D Compositing</h2>
-                        <p>A Live update on the Current Completion of Asset Quality checks for January 2020</p>
-                        <!-- <button class="skills-button-2">Click Here</button> -->
-                    </div>
-                </div>     
-            </div>  
-        </div>
-    </div> 
-</section>
-<!-- Portfolio -->
-<section>
-    <div class="folio" id="featured">
-        <div class="folio-overlay">
-        <svg id="curve1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 175.88">
-            <path class="cls-1" d="M0,124.12s276.32,57,660.53,59.77S1400,124.12,1400,124.12V300H0Z" transform="translate(0 -124.12)"/>
-        </svg>
-        <div class="container">
-            <div class="folio-head">
-                <h2>MOST RECENT PROJECTS</h2>
-                <hr class="folio-solid"><br>
-            </div>
-            <div class="folio-row">
-                <div class="folio-column">
-                    <div class="folio-box">
-                        <img class="folio-img" src="Images/Front_Page/Gaming.jpg">
-                        <p class="folio-text">GAMING</p>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About Gerard Marshall</span>
+                        We offer training and skill building courses across Technology, Design, Management, Science and Humanities.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/Gerarddude5100"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="folio-column">
-                     <div class="folio-box">
-                         <a href="Webserver.html">
-                        <img class="folio-img" src="Images/Front_Page/Networking.png">
-                        <p class="folio-text">NETWORKING</p></a>
-                    </div>
-                </div>
-                <div class="folio-column">
-                     <div class="folio-box">
-                        <img class="folio-img" src="Images/Front_Page/Programming.jpg">
-                        <p class="folio-text">PROGRAMMING</p>
-                    </div>
-                </div>
-            </div>
-            <div class="folio-row">
-                <div class="folio-column">
-                    <div class="folio-box">
-                        <img class="folio-img" src="Images/Front_Page/Digital%20Assets.png">
-                        <p class="folio-text">ASSET MANAGEMENT</p>
-                    </div>
-                </div>
-                <div class="folio-column">
-                     <div class="folio-box">
-                        <img class="folio-img" src="Images/Front_Page/Visual%20Effects.jpg">
-                        <p class="folio-text">VISUAL EFFECTS</p>
-                    </div>
-                </div>
-                <div class="folio-column">
-                     <div class="folio-box">
-                        <img class="folio-img" src="Images/Front_Page/miscellaneous.jpg">
-                        <p class="folio-text">MISCELLANEOUS</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Seporator -->
-<section>
-    <div class="seperator">
-    </div>
-</section>
-<section>
-    <div class="seperator">
-        <div class="container">
-        </div>
-    </div>
-</section>
-<!-- Footer-->
-<section>
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <img src="Images/Logos/Text.png">
-            <p class="footer-links">
-                <a href="#">Home</a>
-                |
-                <a href="#">Blog</a>
-                |
-                <a href="#">About</a>
-                |
-                <a href="#">Contact</a>
-            </p>
-            <p class="footer-company-name">@ 2020 Cine+ Spirit</p>
-        </div>
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Hampshire, Basingstoke.</span>UK, United Kingdom</p>
-            </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+44 07-906280402</p>
-            </div>
-            <div>
-				<i class="fa fa-envelope"></i>
-				<p><a href="gerard.marshall41@yahoo.co.uk">support@cinespirit.com</a></p>
-            </div>
-            </div>
-            <div class="footer-right">
-				<p class="footer-company-about">
-					<span>About Gerard Marshall</span>
-					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
-				<div class="footer-icons">
-					<a href="https://www.facebook.com/Gerarddude5100"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-youtube"></i></a>
-				</div>
-            </div>
-    </footer>
-</section>
-<!-- Page Load -->
-<script>
-    var myVar;
-    function myLoading() {
-        myVar = setTimeout(showPage, 1500);   
-        }
-    function showPage() {
-        document.getElementById("loader-wrapper").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-        }
-</script>
-<!-- Sticky Nav Bar  -->
-<script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("myTopnav").style.top = "0";
-            } else {
-                document.getElementById("myTopnav").style.top = "-80px";
+            </footer>
+        </section>
+        <!-- Page Load -->
+        <script>
+            var myVar;
+
+            function myLoading() {
+                myVar = setTimeout(showPage, 1500);
             }
-            prevScrollpos = currentScrollPos;
-        }
-</script>
-<!-- Section Expansion  -->
-<script>
-         dis = document.getElementById("box");
-        
-        var myScrollFunc = function() {
-          var y = window.scrollY;
-          if (y >= 1000) {
-            dis.style.maxHeight = dis.scrollHeight + "px"
-          } else {
-            dis.style.maxHeight = null;
-          }
-        };
-        window.addEventListener("scroll", myScrollFunc);
-</script>
-<!-- Responsive Nav Bar -->
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-</script>
+
+            function showPage() {
+                document.getElementById("loader-wrapper").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+        <!-- Sticky Nav Bar  -->
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("myTopnav").style.top = "0";
+                } else {
+                    document.getElementById("myTopnav").style.top = "-80px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+        <!-- Section Expansion  -->
+        <script>
+            dis = document.getElementById("box");
+
+            var myScrollFunc = function() {
+                var y = window.scrollY;
+                if (y >= 1000) {
+                    dis.style.maxHeight = dis.scrollHeight + "px"
+                } else {
+                    dis.style.maxHeight = null;
+                }
+            };
+            window.addEventListener("scroll", myScrollFunc);
+        </script>
+        <!-- Responsive Nav Bar -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </div>
 </body>
+
 </html>
