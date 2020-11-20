@@ -512,6 +512,11 @@ body {
     padding-top: 10px;
 }
 
+.skills .skills-row .skills-column .skills-box .skills-text {
+    padding: 0px 20px 0px 20px;
+    
+}
+
 .skills .skills-row .skills-column .skills-box .skills-button {
     font-size: 16px;
     cursor: pointer;
