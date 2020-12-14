@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="Images/Logos/CineSpirit%20Logo%20Design.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cine+ Spirit Portfolio</title>
+    <link href="Coming_Soon.css" rel="stylesheet">
+    <script src="/Javascript/jquery-3.5.1.js"></script>
+</head>
+
+<body onload="myLoading()">
+    <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="section" id="myDiv">
+        <section id="home">
+            <div class="header">
+                <div class="header-overlay">
+                    <div class="container">
+                        <div class="header-text">
+                            <p class="header-text-2">PAGE UNDER<span style="font-weight:lighter"> CONSTRUCTION</span></p>
+                            <p class="header-text-3">Hold tight as the new page is being created <br>to produce more exciting content</p>
+                            <div id="countdown">
+                                <ul>
+                                    <li><span id="days"></span>days</li>
+                                    <li><span id="hours"></span>Hours</li>
+                                    <li><span id="minutes"></span>Minutes</li>
+                                    <li><span id="seconds"></span>Seconds</li>
+                                </ul>
+                            </div>
+                            <a href="/index.html">
+                                <button class="header-btn">MORE PROJECTS</button>
+                            </a>
+                            <a href="/index.html">
+                                <button class="header-btn">RETURN HOME</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Page Load -->
+        <script>
+            var myVar;
+
+            function myLoading() {
+                myVar = setTimeout(showPage, 1500);
+            }
+
+            function showPage() {
+                document.getElementById("loader-wrapper").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+        <!-- Countdown  -->
+        <script>
+            (function() {
+                const second = 1000,
+                    minute = second * 60,
+                    hour = minute * 60,
+                    day = hour * 24;
+
+                let birthday = "Dec 30, 2020 00:00:00",
+                    countDown = new Date(birthday).getTime(),
+                    x = setInterval(function() {
+
+                        let now = new Date().getTime(),
+                            distance = countDown - now;
+
+                        document.getElementById("days").innerText = Math.floor(distance / (day)),
+                            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                        //do something later when date is reached
+                        if (distance < 0) {
+                            let headline = document.getElementById("headline"),
+                                countdown = document.getElementById("countdown"),
+                                content = document.getElementById("content");
+
+                            headline.innerText = "It's my birthday!";
+                            countdown.style.display = "none";
+                            content.style.display = "block";
+
+                            clearInterval(x);
+                        }
+                        //seconds
+                    }, 0)
+            }());
+        </script>
+    </div>
+</body>
+
+</html>
