@@ -108,6 +108,13 @@ body {
     display: block;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
 @media screen and (max-width: 880px) {
     .container {
         padding-left: 30px;
@@ -122,7 +129,6 @@ body {
 .topnav {
      overflow: hidden;
     background-color: snow;
-    border-bottom: solid 2px rgb(252, 53, 101);
     position: fixed;
     top: 0;
     width: 100%;
@@ -132,11 +138,12 @@ body {
 }
 
 .topnav a {
+     border-bottom: solid 3px snow;
     float: right;
     display: block;
     color: grey;
     text-align: center;
-    padding: 21px 50px;
+    padding: 21px 60px;
     text-decoration: none;
     font-size: 17px;
 
@@ -146,7 +153,8 @@ body {
 
 .topnav a:hover {
     color: rgb(252, 53, 101);
-    transition: 0.4s ease;
+    border-bottom: 3px solid rgb(252, 53, 101);
+    transition: 0.2s ease;
 }
 
 .topnav a.active {
@@ -159,18 +167,19 @@ body {
 
 .logo {
     width: 220px;
-    margin: 10px;
+    margin: 9px;
     padding: 0 10px;
     
 
 
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
   .topnav a:not(:first-child) {
     display: none;
       color: snow;
     border-top: solid 2px rgb(252, 53, 101);
+      border: none;
   }
 
   .topnav a.icon {
@@ -181,7 +190,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -194,6 +203,7 @@ body {
     display: block;
     text-align: left;
     background-color: rgb(42, 40, 46);
+    border-bottom: solid 0px;
   }
 }
 /* || Landing Page */
@@ -237,7 +247,7 @@ body {
 .header-text-3 {
     font-size: 25px;
     margin: 0px;
-    color: rgb(252, 53, 101)
+    color: rgb(252, 53, 101);
 }
 
 .header-btn {
@@ -263,8 +273,8 @@ body {
 }
 
 .header-btn:hover {
-    background-color: #457b9d;
-    border: 2px solid #457b9d;
+    background-color: rgb(252, 53, 101);
+    border: 2px solid rgb(252, 53, 101);
     border-radius: 2px;
     transition: border 0.7s ease;
     transition: background-color 0.7s ease;
@@ -452,7 +462,7 @@ body {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out;
-    background-color: #e76f51;
+    background-color: rgb(231,61,73);
 }
 
 .skills .skills-row {
@@ -589,6 +599,7 @@ body {
 .folio {
     background-color: snow;
     text-align: center;
+
 }
 
 
@@ -683,15 +694,38 @@ body {
     opacity: 1;
    
 }
+@media screen and (max-width: 1024px) {
+    
+    .folio .folio-head {
+        font-size: 30px;
+
+    }
+    
+    .folio .folio-row {
+        display: grid;
+    }
+    
+    .folio .folio-row .folio-column {
+        width: 100%;
+    }
+    
+    .folio .folio-row .folio-column .folio-box .folio-img {
+        display: grid;
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 880px) {
     
     .folio .folio-head {
         font-size: 15px;
+
     }
     
     .folio .folio-row {
         display: grid;
+        left: 50
     }
     
     .folio .folio-row .folio-column {
@@ -762,6 +796,13 @@ body {
     font-size: 20px;
     padding: 40px 40px 150px 40px;
     margin: 0px;
+}
+
+@media screen and (max-width:1024px) {
+    .further .further-text-con {
+        font-size: 28px;
+        padding: 40px 20px;
+    }
 }
 
 

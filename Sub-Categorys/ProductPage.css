@@ -100,7 +100,6 @@ body {
 .topnav {
      overflow: hidden;
     background-color: snow;
-    border-bottom: solid 2px rgb(252, 53, 101);
     position: fixed;
     top: 0;
     width: 100%;
@@ -110,11 +109,12 @@ body {
 }
 
 .topnav a {
+     border-bottom: solid 3px snow;
     float: right;
     display: block;
     color: grey;
     text-align: center;
-    padding: 21px 50px;
+    padding: 21px 60px;
     text-decoration: none;
     font-size: 17px;
 
@@ -124,7 +124,8 @@ body {
 
 .topnav a:hover {
     color: rgb(252, 53, 101);
-    transition: 0.4s ease;
+    border-bottom: 3px solid rgb(252, 53, 101);
+    transition: 0.2s ease;
 }
 
 .topnav a.active {
@@ -144,22 +145,23 @@ body {
 
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
   .topnav a:not(:first-child) {
     display: none;
-      color: snow;
+    color: snow;
     border-top: solid 2px rgb(252, 53, 101);
+    border: none;
   }
 
   .topnav a.icon {
-    float: right;
+      float: right;
     display: block;
-      color: grey;
-      border: none;
+    color: grey;
+    border: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -174,9 +176,7 @@ body {
     background-color: rgb(42, 40, 46);
   }
 }
-
 /* || Landing Page */
-
 
 .header {
     text-align: center;
@@ -200,7 +200,7 @@ body {
 .header-text-1 {
     font-size: 25px;
     margin: 0px;
-    font-weight: lighter;
+    
     color: rgb(252,53,101);
     
 }
@@ -223,7 +223,7 @@ body {
     font-weight: light;
     border-radius: 2px;
     text-align: center;
-    padding: 14px 28px;
+    padding: 14px 20px;
     font-size: 16px;
     cursor: pointer;
     width: 200px;
@@ -238,9 +238,9 @@ body {
                   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
                   0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.header-btn:hover {
-    background-color: #457b9d;
-    border: 2px solid #457b9d;
+.header .header-overlay .header-text .header-btn:hover {
+    background-color: rgb(252, 53, 101);
+    border: 2px solid rgb(252, 53, 101);
     border-radius: 2px;
     transition: border 0.7s ease;
     transition: background-color 0.7s ease;
