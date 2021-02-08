@@ -186,13 +186,16 @@ body {
 }
 
 .header-btn:hover {
-    background-color: rgb(252, 53, 101);
-    border: 2px solid rgb(252, 53, 101);
+    background-color: snow;
+    border: 2px solid snow;
     border-radius: 2px;
+    color: rgb(230,57,70);
+    font-weight: bold;
     transition: border 0.7s ease;
     transition: background-color 0.7s ease;
     transition: border 0.7s ease-out;
     transition: background-color 0.7s ease-out;
+    
 }
 
 .header-row {

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="Images/Homepage/Logo/CineSpirit_Youtube_Thumbnail.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Cine+ Spirit Portfolio</title>
-    <link href="Homepage.css" rel="stylesheet">
-    <script src="/Javascript/jquery-3.5.1.js"></script>
+    <title>CineSpirit</title>
+    <link href="Homepage.css" type="text/css" rel="stylesheet">
 </head>
 
 <body onload="myLoading()">
@@ -19,9 +19,9 @@
         <!-- Nav Bar -->
         <section>
             <nav class="topnav" id="myTopnav">
-                <img class="logo" src="/Images/Homepage/Logo/CineSpirit_Website_Logo_Text.png">
+                <img class="logo" onclick="window.location.href='../index.html'" src="/Images/Homepage/Logo/CineSpirit_Website_Logo_Text.png">
                 <a href="#contact">Contact</a>
-                <a href="#featured">Featured</a>
+                <a href="#featured">Projects</a>
                 <a href="#curve">About</a>
                 <a href="index.html">Home</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -39,7 +39,7 @@
                             <p class="header-text-2">ONLINE PORTFOLIO<br> FOR CREATIVE PROJECTS</p>
                             <p class="header-text-3">A Repository for tutorials</p>
                             <a href="#featured">
-                                <button class="header-btn">CURRENT PROJECTS</button>
+                                <button class="header-btn">RECENT PROJECTS</button>
                             </a>
                             <button class="header-btn">RANDOM PROJECT</button>
                         </div>
@@ -55,14 +55,14 @@
             <div class="about-me">
                 <div class="container">
                     <div class="intro-row">
-                        <div class="intro-column-left">
+                        <div class="intro-column-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                             <h1 class="intro-header">Hi, I'm<span style="color: #e63946"> Gerard</span></h1>
                             <p class="intro-text">Aspiring <span style="color: rgb(252, 53, 101)">Web Developer</span>, <span style="color: rgb(252, 53, 101)">Programmer</span> and <span style="color: rgb(252, 53, 101)">2D Compositor</span> facinated in creating new and interesting Projects. </p>
                             <p class="intro-text">Currently based in Hampshire, UK, specialising in<br>
                                 Digital Asset Management.<span style="color: black" ;></span></p>
                             <button class="intro-button">Check out my Speciality's</button>
                         </div>
-                        <div class="intro-column-right">
+                        <div class="intro-column-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <img src="Images/Homepage/Portrait/Gerard_Marshall.png" class="intro-img">
                         </div>
                     </div>
@@ -74,8 +74,8 @@
             <div class="skills" id="box">
                 <div class="container">
                     <div class="skills-row">
-                        <div class="skills-column">
-                            <div class="skills-box">
+                        <div class="skills-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <div class="skills-box" class="intro-column-right">
                                 <img class="skills-img" src="/Images/Homepage/Icons/design%20-%20Copy.png">
                                 <h2 class="skills-head" style="color:#e63946" ;>Web-Design</h2>
                                 <p class="skills-text" style="color: #e63946">A Designer with a passion for producing clean design patterns and thoughtful interactions.</p>
@@ -83,8 +83,8 @@
                                 <!-- <button class="skills-button">Click Here</button> -->
                             </div>
                         </div>
-                        <div class="skills-column">
-                            <div class="skills-box">
+                        <div class="skills-column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                            <div class="skills-box" class="intro-column-right">
                                 <img class="skills-img" src="/Images/Homepage/Icons/Web-design_Crimson.png">
                                 <h2 class="skills-head" style="color: #e63946">Programming</h2>
                                 <p class="skills-text" style="color: #e63946">I like to code projects from scratch and enjoy bringing ideas to life in a digital format.</p>
@@ -94,9 +94,8 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="skills-column">
-                            <div class="skills-box">
+                        <div class="skills-column" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                            <div class="skills-box" class="intro-column-right">
                                 <img class="skills-img" src="Images/Homepage/Icons/Compositing_Crimson.png">
                                 <h2 class="skills-head" style="color: #e63946">2D Compositing</h2>
                                 <p class="skills-text" style="color: #e63946">Passion for creating facinating visuals and solving ntechnical issues</p>
@@ -115,83 +114,35 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="seperator-info">
-                <div class="container">
-                </div>
-            </div>
-        </section>
         <!-- Portfolio -->
         <section>
             <div class="folio">
                 <div class="container">
-                    <div class="folio-head" id="featured">
-                        <h2>I am continually working to create new <span style="color: rgb(252,53,101)">Exciting Projects!</span></h2>
-                        <p>Below are the most recent Computer Networking projects, containing <span style="color: rgb(252,53,101)">Simple</span> and <span style="color: rgb(252,53,101)">Easy</span> instructions for all ages.</p>
-                        <hr class="folio-solid"><br>
-                    </div>
+                        <div class="folio-head" id="featured" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
+                            <h2>We are continually working to create new <span style="color: rgb(252,53,101)">Exciting Projects!</span></h2>
+                            <p>Below are the most recent technical projects, containing <span style="color: rgb(252,53,101)">Simple</span> and <span style="color: rgb(252,53,101)">Easy</span> instructions for all ages.</p>
+                            <hr class="folio-solid"><br>
+                        </div>
                     <div class="folio-row">
-                        <div class="folio-column">
-                            <div class="folio-box">
-                                <a href="/Coming_Soon.html">
-                                <img class="folio-img" src="Images/Homepage/Gaming.jpg">
-                                <div class="folio-img-overlay">
-                                    <div class="folio-text">GAMING</div>
+                        <div class="folio-column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <a class="folio-link" href="Coming_Soon.html">
+                                <div class="folio-box">
+                                    <img class="folio-img" src="/Images/Sub_Categorys/Gaming/Arma_3_Dedicated_Server/Arma3_Server_Setup_Thumbnail.png">
+                                    <p class="folio-text-header">ARMA 3 Dedicated Server Setup</p>
+                                    <p class="folio-text">Creating a Dedicated Arma 3 Server using a Windows Server PC.</p>
+                                    <p class="folio-text-require">Steam CMD | TDSM | ARMA 3 </p>
                                 </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
-                        <div class="folio-column">
-                            <div class="folio-box">
-                                <a href="/Coming_Soon.html">
-                                    <img class="folio-img" src="Images/Homepage/Networking.jpg">
-                                    <div class="folio-img-overlay">
-                                        <div class="folio-text">NETWORKING</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="folio-column">
-                            <div class="folio-box">
-                                <a href="/Sub-Categorys/Sub_Category_Programming.html">
-                                <img class="folio-img" src="Images/Homepage/Programming.jpg">
-                                <div class="folio-img-overlay">
-                                    <div class="folio-text">PROGRAMMING</div>
+                        <div class="folio-column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <a class="folio-link" href="Coming_Soon.html">
+                                <div class="folio-box">
+                                    <img class="folio-img" src="/Images/Sub_Categorys/Networking/Rasberry_Pi_Zero_Setup/Youtube%20Video%20Thumbnail%20RapberryPi%20Zerio%20Setup%20(Card).png">
+                                    <p class="folio-text-header">Raspberry PI Zero SSH Setup</p>
+                                    <p class="folio-text">A Simple solution to setup a RaspberryPI without any accessories</p>
+                                    <p class="folio-text-require">PC/MAC | Micro USB Cable | SD Card </p>
                                 </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="folio-row">
-                        <div class="folio-column">
-                            <div class="folio-box">
-                                <a href="/Coming_Soon.html">
-                                <img class="folio-img" src="Images/Homepage/Digital%20Assets.png">
-                                <div class="folio-img-overlay">
-                                    <div class="folio-text">DIGITAL ASSET</div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="folio-column">
-                            <div class="folio-box">
-                                <a href="/Coming_Soon.html">
-                                <img class="folio-img" src="Images/Homepage/Visual%20Effects.jpg">
-                                <div class="folio-img-overlay">
-                                    <div class="folio-text">VISUAL EFFECTS</div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="folio-column">
-                            <div class="folio-box">
-                                <a href="/Coming_Soon.html">
-                                <img class="folio-img" src="Images/Homepage/miscellaneous.jpg">
-                                <div class="folio-img-overlay">
-                                    <div class="folio-text">MISCELLANEOUS</div>
-                                </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -199,16 +150,16 @@
         </section>
         <!-- Further Info -->
         <section>
-            <svg id="curve" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 175.88">
-                <path class="cls-2" d="M0,124.12s276.32,57,660.53,59.77S1400,124.12,1400,124.12V300H0Z" transform="translate(0 -126.12)" />
-            </svg>
-            <div class="further" id="#contact">
+            
+            <div class="further" id="#contact" >
                 <div class="container">
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                     <h2 class="further-text">Any <span style="color:rgb(252,53,101">Projects</span> you think could be interesting?</h2>
                     <a href="mailto:enquiries@cinespirit.uk">
                         <button class="further-button">Contact Us</button>
                     </a>
                     <p class="further-text-con">Have any other <span style="color: rgb(252,53,101)">Questions?</span> See our <span style="color: rgb(252,53,101)">Q&A</span></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -226,7 +177,7 @@
                         |
                         <a href="#">Contact</a>
                     </p>
-                    <p class="footer-company-name">@ 2020 Cine+ Spirit</p>
+                    <p class="footer-company-name">@ 2020 CineSpirit</p>
                 </div>
                 <div class="footer-center">
                     <div>
@@ -235,7 +186,7 @@
                     </div>
                     <div>
                         <i class="fa fa-envelope"></i>
-                        <p><a href="gerard.marshall41@yahoo.co.uk">support@cinespirit.com</a></p>
+                        <p><a style="color: #e63946" href="">enquiries@cinespirit.uk</a></p>
                     </div>
                 </div>
                 <div class="footer-right">
@@ -253,6 +204,8 @@
                 </div>
             </footer>
         </section>
+        <script src="/Javascript/jquery-3.5.1.js">
+        </script>
         <!-- Page Load -->
         <script>
             var myVar;
@@ -264,6 +217,7 @@
             function showPage() {
                 document.getElementById("loader-wrapper").style.display = "none";
                 document.getElementById("myDiv").style.display = "block";
+                
             }
         </script>
         <!-- Sticky Nav Bar  -->
@@ -279,20 +233,6 @@
                 prevScrollpos = currentScrollPos;
             }
         </script>
-        <!-- Section Expansion  -->
-        <script>
-            dis = document.getElementById("box");
-
-            var myScrollFunc = function() {
-                var y = window.scrollY;
-                if (y >= 1000) {
-                    dis.style.maxHeight = dis.scrollHeight + "px"
-                } else {
-                    dis.style.maxHeight = null;
-                }
-            };
-            window.addEventListener("scroll", myScrollFunc);
-        </script>
         <!-- Responsive Nav Bar -->
         <script>
             function myFunction() {
@@ -302,6 +242,36 @@
                 } else {
                     x.className = "topnav";
                 }
+            }
+        </script>
+        <!-- On Scroll Animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            $(function() {
+                AOS.init({
+
+                });
+
+                onElementHeightChange(document.body, function() {
+                    AOS.refresh();
+                });
+            });
+
+            function onElementHeightChange(elm, callback) {
+                var lastHeight = elm.clientHeight
+                var newHeight;
+
+                (function run() {
+                    newHeight = elm.clientHeight;
+                    if (lastHeight !== newHeight) callback();
+                    lastHeight = newHeight;
+
+                    if (elm.onElementHeightChangeTimer) {
+                        clearTimeout(elm.onElementHeightChangeTimer);
+                    }
+
+                    elm.onElementHeightChangeTimer = setTimeout(run, 200);
+                })();
             }
         </script>
     </div>
