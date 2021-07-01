@@ -177,8 +177,29 @@ body {
     width: 220px;
     margin: 10px;
     padding: 0 10px;
+}
 
+.hero {
+  width: 100%;
+}
 
+[data-aos="nav-animation"] {
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+[data-aos="nav-animation"].aos-animate {
+  background-color: #1B1932;;
+  font-size: 1rem;
+}
+
+[data-aos="nav-animation"] a{
+  color: mediumslateblue;
+}
+
+[data-aos="nav-animation"].aos-animate a{
+  color: white;
+}
 
 
 }
@@ -641,90 +662,108 @@ body {
     padding-bottom: 100px
 }
 
-.con-how .con-overlay .con-con-header {
-    color: rgb(252, 53, 101);
-    margin: 0px
-}
-
-.con-how .con-overlay .con-con-header .con-con-line {
-    border: 1px solid rgb(252, 53, 101);
-    width: 200px;
-    float: left;
-}
-
-.con-line {
-    border: 1px solid rgb(252, 53, 101);
-    text-align: left;
-    margin-top: 20px;
-}
-
-/* ||| Media Row */
-
-.con-media {
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-.con-media .con-row {
+.con-how .con-overlay .con-tutorial {
     display: table;
-    border-spacing: 0px;
+    border-spacing: 0;
 }
 
-.con-media .con-row .con-column-left {
-    width: 50%;
+.con-how .con-overlay .con-tutorial .con-Tutorial-Left {
     display: table-cell;
+    width: 20%;
+    padding-right: 20px 
+    
+    
+}
+
+.con-how .con-overlay .con-tutorial .con-Tutorial-Right {
+    display: table-cell;
+    width: 80%;
+}
+
+.con-Tutorial-Text-Slides{
+    display: none;
+}
+
+
+.con-how .con-overlay .con-tutorial .con-Tutorial-Right .con-tutorial-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+
+.con-how .con-overlay .con-tutorial .con-Tutorial-Right .con-tutorial-buttons .con-Tutorial-Button  {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
     text-align: left;
-    padding: 0px 80px 0px 0px;
-    vertical-align: top;
-}
-
-.con-media .con-row .con-column-right {
-    display: table-cell;
-    width: 50%;
-    text-align: center;
-}
-
-.con-media .con-row .con-column-right .con-vid {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: border 0.7s ease;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
+    user-select: none;
+    
 }
 
-.con-media .con-row .con-column-right .con-vid .con-vid-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* ||| Tutorial Box */
+
+  .con-Tutorial-Text-Slides .con-Tutorial-Text-Slide-Background {
+    background-color: transparent;
+    border: 10px solid snow;
+ 
+    color: white;
+    padding: 20px;
+
+    
 }
 
-@media screen and (max-width:880px) {
-    .con-media .con-row {
-        display: grid;
-    }
-
-    .con-media .con-row .con-column-left {
-        width: 100%;
-        padding: 0px;
-
-    }
-
-    .con-media .con-row .con-column-right {
-        width: 100%;
-        padding: 10px 0px 0px 0px;
-
-    }
-
+.con-Tutorial-Slide-Image {
+    display: block;
+    margin: 0px auto 0px;
+    max-width: 75%;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ||| Text Box */

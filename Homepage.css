@@ -99,13 +99,13 @@ body {
 }
 
 .container {
-
     padding-left: 300px;
     padding-right: 300px;
 }
 
 .section {
     display: block;
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -124,10 +124,8 @@ body {
 
 
 /* || NavBar */
-
-
 .topnav {
-     overflow: hidden;
+    overflow: hidden;
     background-color: snow;
     position: fixed;
     top: 0;
@@ -139,7 +137,7 @@ body {
 }
 
 .topnav a {
-     border-bottom: solid 3px snow;
+    border-bottom: solid 3px snow;
     float: right;
     display: block;
     color: grey;
@@ -147,9 +145,6 @@ body {
     padding: 21px 60px;
     text-decoration: none;
     font-size: 17px;
-
-
-
 }
 
 .topnav a:hover {
@@ -170,11 +165,9 @@ body {
     width: 220px;
     margin: 9px;
     padding: 0 10px;
-    
-
-
-
 }
+
+
 @media screen and (max-width: 880px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -205,13 +198,22 @@ body {
     text-align: left;
     background-color: rgb(42, 40, 46);
     border-bottom: solid 0px;
+      z-index: 1;
   }
 }
 /* || Landing Page */
 
+#header-video {
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+    z-index: -1;
+}
 .header {
     text-align: center;
-    background-image: url(Images/Homepage/Networking%20Server.jpg);
+
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -228,7 +230,7 @@ body {
 }
 
 .header .header-overlay .header-text {
-    padding: 300px 0px 300px;
+    padding: 340px 0px 340px;
     color: snow;
 }
 
@@ -496,8 +498,9 @@ body {
 .about-me {
     display: block;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.12);
+    background-color: snow;
 }
 
 /* ||| Intro Row */
@@ -505,6 +508,7 @@ body {
 .about-me .intro-row {
     display: table;
     border-spacing: 0px;
+    padding-top: 70px;
 }
 
 .about-me .intro-row .intro-column-left {
@@ -577,6 +581,10 @@ body {
 }
 
 @media screen and (max-width: 880px) {
+    .about-me {
+        padding-bottom: 50px;
+    }
+    
     .about-me .intro-row {
         display: grid;
     }
@@ -614,6 +622,7 @@ body {
    
     transition: max-height 0.5s ease-out;
     background-color: rgb(231,61,73);
+        z-index: 10;
     
     
 }
@@ -724,19 +733,23 @@ body {
 @media screen and (max-width: 880px) {
 
     .skills {
-        padding: 0px;
-        margin: 0px;
+        
+       
         
     }
     
     
-    .skills .skills-row {
-      display: table-cell;
-    align-content: cente;
+    .skills .skills-row  {
+        display: block;
+        width: 100%;
+        text-align: center;
+        
 
-     
+        
     }
     
+    .skills .skills-row .skills-column .skills-box{
+    }
 
 }
 
@@ -758,11 +771,9 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 70px;
-
+    padding-bottom: 50px;
     
 }
-
 
 
 .folio .folio-head {
@@ -773,34 +784,47 @@ body {
 }
 
 .folio .folio-solid {
-    border: 1px solid white;
-    width: 60px;
-    text-align: center;
+    border: none;
     
 }
 
-.folio .folio-row {
-    display: table;
-    width: 33%;
-    border-spacing: 11;
-}
+.folio .folio-container {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    
 
-.folio .folio-row .folio-column {
-    display: table-cell;
-    padding: 20px;
-    padding-bottom: 50px;
-    vertical-align: top;
 }
-
-.folio .folio-row .folio-column .folio-link {
+    
+ .folio .folio-container .folio-link {
     text-decoration: none;
 }
 
-.folio .folio-row .folio-column .folio-box {
-    background-color: snow;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+   
+ .folio .folio-container .folio-link .folio-box {
+     flex: 1 0 500px;
+     box-sizing: border-box;
+    margin: 10px;
+     padding-bottom: 10px;
+     background-color: snow;
+     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
@@ -808,7 +832,14 @@ body {
         0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.folio .folio-row .folio-column .folio-box:hover {
+.folio .folio-container .folio-link .folio-box .folio-img {
+    display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+.folio .folio-container  .folio-link .folio-box:hover {
     -ms-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
@@ -816,77 +847,79 @@ body {
     
 }
 
-.folio .folio-row .folio-column .folio-box .folio-img  {
-    width: 400px;
-    
-}
-
-.folio .folio-row .folio-column .folio-box .folio-text-header {
+.folio .folio-container .folio-link .folio-box .folio-text-header {
     color: black;
     padding-left: 17px;
     font-weight: bold;
 }
 
-.folio .folio-row .folio-column .folio-box .folio-text {
+.folio .folio-container .folio-link .folio-box .folio-text {
     color: black;
 
     padding-left: 20px;
+    padding-right: 20px;
     font-weight: 400px
 }
-.folio .folio-row .folio-column .folio-box .folio-text-require {
+.folio .folio-container .folio-link .folio-box .folio-text-require {
     color: grey;
     padding-left: 20px;
     font-weight: 400px;
-    font-size: 12px
 }
 
-@media screen and (max-width: 1024px) {
+.folio .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+    
+}
+.folio .active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+
+@media all and (max-width: 1024px) {
     
     .folio .folio-head {
         font-size: 30px;
 
     }
     
-    .folio .folio-row {
-        display: table-cell;
-    }
-    
-    .folio .folio-row .folio-column {
-       
+    .folio .folio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         
     }
     
-    .folio .folio-row .folio-column .folio-box .folio-img {
-        display: grid;
-        width: 100%;
-        text-align: center;
+    .folio-box {
+        flex: 0 1 calc(25% - 1em);
     }
+    
 }
+    
 
-@media screen and (max-width: 880px) {
+
+@media all and (max-width: 880px) {
     
     .folio .folio-head {
         font-size: 15px;
 
     }
     
-    .folio .folio-row {
-        display: table-cell;
-    
-    }
-    
-    .folio .folio-row .folio-column {
-        display: grid;
-
-    }
-    
-    .folio .folio-row .folio-column .folio-box .folio-img {
-        display: grid;
-        width: 100%;
-        text-align: center;
+    .folio .folio-container {
+        flex-direction: column;
+        
     }
 }
-
 /* || Further Info */
 
 .cls-2 {
